@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <form id="find">
+                <p>Search Todos</p>
+                <input type="text" placeholder="Find your todos..." id="findtodo" autocomplete="off">
+            </form>
+        </header>
+        <ul id="todolist">
+            <li class="listitem">
+                <span>Learn javaScript language</span>
+                <i class="fas fa-trash-alt delete"></i>
+            </li>
+            <li class="listitem">
+                <span>Check emails & social media accounts</span>
+                <i class="fas fa-trash-alt delete"></i>
+            </li>
+            <li class="listitem">
+                <span>Play PUBG</span>
+                <i class="fas fa-trash-alt delete"></i>
+            </li>
+            <li class="listitem">
+                <span>Watch Netflix shows</span>
+                <i class="fas fa-trash-alt delete"></i>
+            </li>
+            <li class="listitem">
+                <span>Watch Football</span>
+                <i class="fas fa-trash-alt delete"></i>
+            </li>
+        </ul>
+        <footer>
+            <form id="add">
+                <p>Add Todos</p>
+                <input type="text" placeholder="Add your new todos..." id="addtodo" autocomplete="off">
+            </form>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
