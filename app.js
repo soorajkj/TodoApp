@@ -39,7 +39,7 @@ add.addEventListener('submit', (e) =>{
 todolist.addEventListener('click', e =>{
     if(e.target.classList.contains('delete')){
         const ls = JSON.parse(localStorage.getItem('LocalTask'));
-        const text = e.target.parentElement.innerText;
+        const text = e.target.parentElement.textContent;
         const index = ls.indexOf(text);
         if (index !== -1) {
             ls.splice(index, 1);
